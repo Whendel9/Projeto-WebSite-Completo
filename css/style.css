@@ -14,7 +14,7 @@ img {
 }
 
 .center {
-    max-width: 1280px;
+    max-width: 960px;
     padding: 0 2%;
     margin: 0 auto;
 }
@@ -76,6 +76,10 @@ nav.desktop li {
 nav.desktop a {
     color: white;
     text-decoration: none;
+}
+
+nav.mobile {
+    display: none;
 }
 
 .banner-principal {
@@ -270,7 +274,7 @@ p a {
     }
 
     nav.mobile ul {
-        display: block;
+        display: none;
         top: 70px;
         left: 0;
         position: absolute;
