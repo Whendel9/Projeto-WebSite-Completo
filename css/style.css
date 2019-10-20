@@ -55,10 +55,6 @@ header .logo {
     font-size: 26px;
 }
 
-.mobile {
-    display: none;
-}
-
 nav.desktop ul {
     list-style: none;
     position: relative;
