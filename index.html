@@ -1,3 +1,4 @@
+<!--<?php include('config.php'); ?>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,145 +9,150 @@
     <link rel="stylesheet" href="css\style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a7707157f1.js" crossorigin="anonymous"></script>
-    <title>Projeto 01</title>
+    <title>Code Pleno Enterprise</title>
 </head>
 <body>
+    
+    <!-- Header -->
     <header>
-        <div class="center">
-            <div class="logo left">Logomarca</div><!--Fim Logo -->
-            <nav class="desktop right">
+        <div class="container header">
+            <h1>logoMarca</h1>
+            <div class="btn-mobile is-enabled"><i class="fas fa-bars"></i></div>
+            <nav class="menu is-disabled">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#1">sobre</a></li>
+                    <li><a href="#2">serviços</a></li>
+                    <li><a href="#3">habilidades</a></li>
+                    <li><a href="#4">Contato</a></li>
                 </ul>
-            </nav><!--Fim Desktop -->
-            <nav class="mobile right">
-                <div class="botao-menu-mobile"><i class="fas fa-bars"></i></div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav><!--Fim Mobile -->
-            <div class="clear"></div>
-        </div><!-- Fim Center-->
-    </header><!--Fim Header -->
-
-    <section class="banner-principal">
-        <div class="overlay"></div><!--FIm Overlay-->
-        <div class="center">
+            </nav>
+        </div>
+    </header>
+    <div class="space"></div>
+<!-- Banner -->
+    <section class="banner">
+        <div class="banner-overlay"></div>
+        <div class="container form">
             <form action="">
-                <h2>Qual o seu melhor email?</h2>
-                <input type="email" name="email" required>
-                <input type="submit" value="Cadastrar">
-            </form><!--Fim form -->
-        </div><!--Fim center -->
-    </section><!--Fim banner-principal -->
+                <input type="email" name="email" placeholder="digite seu email...">
+                <input type="submit" value="enviar !">
+            </form>
+        </div>
+    </section>
 
-    <section class="descricao-autor">
-        <div class="center">
-            <div class="w50 left">
-                <h2>Whendel S. Morais</h2>
-                <p>Sed quis libero consectetur, malesuada mi quis, pharetra metus. Vestibulum sed lorem erat. 
-                Maecenas gravida tristique arcu,
-                ut rutrum tortor efficitur vel. Praesent pharetra neque velit, 
-                nec semper tortor varius vitae. Nulla sodales semper orci, at placerat nunc fermentum vel. 
-                Integer hendrerit massa ac magna molestie, sit amet finibus nulla convallis.
-                Integer vel dolor ac justo luctus pellentesque malesuada id eros.</p>
-                <p>Sed quis libero consectetur, malesuada mi quis, pharetra metus. Vestibulum sed lorem erat. 
-                Maecenas gravida tristique arcu,
-                ut rutrum tortor efficitur vel. Praesent pharetra neque velit, 
-                nec semper tortor varius vitae. Nulla sodales semper orci, at placerat nunc fermentum vel. 
-                Integer hendrerit massa ac magna molestie, sit amet finibus nulla convallis.
-                Integer vel dolor ac justo luctus pellentesque malesuada id eros.</p>
-            </div><!--Fim w50 -->
-            <div class="w50 left">
-                <img class="right foto" src="imagens/foto-perfil.jpg" alt="">
-            </div><!--Fim w50 -->
-        </div><!--Fim Center-->
-        <div class="clear"></div>
-    </section><!--Fim descricao-autor -->
-
-    <section class="especialidades">
-        <div class="center">
-            <h2 class="tittle">Especialidades</h2>
-            <div class="w33 left box-especialidade">
-                <h3><i class="fab fa-css3-alt"></i></h3>
-                <h4>Css3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div><!--Fim box-especialidade -->
-            <div class="w33 left box-especialidade">
-                <h3><i class="fab fa-html5"></i></h3>
-                <h4>Html5</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div><!--Fim box-especialidade -->
-            <div class="w33 left box-especialidade">
-                <h3><i class="fab fa-js"></i></h3>
-                <h4>JavaScript</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div><!--Fim box-especialidade -->
-            <div class="clear"></div>
-        </div><!--Fim center -->
-    </section><!--Fim Section especialidades -->
-
-    <section class="extras">
-        <div class="center">
-            <div class="w50 left depoimentos-container">
-                    <h2 class="tittle">Depoimentos dos nossos clientes</h2>
-                    <div class="depoimento-single">
-                        <p class="depoimento-descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                        <p class="nome-autor">Lorem Ipsum</p>
-                    </div><!--Fim Depoimento-aingle -->
-                    <div class="depoimento-single">
-                        <p class="depoimento-descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                        <p class="nome-autor">Lorem Ipsum</p>
-                    </div><!--Fim Depoimento-aingle -->
-                    <div class="depoimento-single">
-                        <p class="depoimento-descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                        <p class="nome-autor">Lorem Ipsum</p>
-                    </div><!--Fim Depoimento-aingle -->
-            </div><!--Fim w50 -->
-            <div class="w50 left servicos-container">
-                <h2 class="tittle">Serviços</h2>
-                <div class="servicos">
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    </ul>
+<!-- Autor -->
+    <section id="#1">
+        <div class="container autor">
+            <div class="row">
+                <div class="autor-txt col-2 col-1--small">
+                    <h2>Whendel S. Morais</h2>
+                    <p>Sed quis libero consectetur, malesuada mi quis, pharetra metus. Vestibulum sed lorem erat. 
+                        Maecenas gravida tristique arcu,
+                        ut rutrum tortor efficitur vel. Praesent pharetra neque velit, 
+                        nec semper tortor varius vitae. Nulla sodales semper orci, at placerat nunc fermentum vel. 
+                        Integer hendrerit massa ac magna molestie, sit amet finibus nulla convallis.
+                        Integer vel dolor ac justo luctus pellentesque malesuada id eros.</p>
+                    <p>Sed quis libero consectetur, malesuada mi quis, pharetra metus. Vestibulum sed lorem erat. 
+                        Maecenas gravida tristique arcu,
+                        ut rutrum tortor efficitur vel. Praesent pharetra neque velit, 
+                        nec semper tortor varius vitae. Nulla sodales semper orci, at placerat nunc fermentum vel. 
+                        Integer hendrerit massa ac magna molestie, sit amet finibus nulla convallis.
+                        Integer vel dolor ac justo luctus pellentesque malesuada id eros.</p>
                 </div>
-            </div><!--Fim w50 -->
-            <div class="clear"></div>
-        </div><!--Fim Center -->
-    </section><!--Section Extras -->
+                <div class="autor-img col-2 col-1--small">
+                    <img src="imagens/foto-perfil.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
+<!-- Habilidades -->
+    <section class="habilidades">
+        <div class="container">
+            <div class="row">
+                <div class="col-1 espec-tt"><h2>Especialidades</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-1--small box-card">
+                    <h3><i class="fab fa-css3-alt"></i></h3>
+                    <h4>Css3</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col-3 col-1--small box-card">
+                    <h3><i class="fab fa-html5"></i></h3>
+                    <h4>Html5</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col-3 col-1--small box-card">
+                    <h3><i class="fab fa-js"></i></h3>
+                    <h4>JavaScript</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Work -->
+    <section class="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 col-1--small work-box">
+                    <h2>Depoimentos dos nossos clientes</h2>
+                    <div class="work-box-depoi">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        <p class="nome-autor">Lorem Ipsum</p>
+                    </div>
+
+                    <div class="work-box-depoi">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        <p class="nome-autor">Lorem Ipsum</p>
+                    </div>
+
+                    <div class="work-box-depoi">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        <p class="nome-autor">Lorem Ipsum</p>
+                    </div>
+                </div>
+
+                <div class="col-2 col-1--small work-box">
+                    <h2>Serviços</h2>
+                    <div class="work-box-serv">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="work-box-serv">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="work-box-serv">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
     <footer>
-        <div class="center">
+        <div class="container footer">
             <p><em>Create by <a href="https://github.com/Whendel9"> Whendel Morais</a></em></p>
         </div>
-    </footer><!-- Footer -->
-<script src="js/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
-
-
+    </footer>
 </body>
 </html>
 
