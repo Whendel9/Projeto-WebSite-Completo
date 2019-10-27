@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="css\style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a7707157f1.js" crossorigin="anonymous"></script>
+    <script>
+        function drop(params) {
+            var elemento = document.getElementById('dropmenu');
+            if(elemento.style.display == 'none'){
+                elemento.style.display = 'flex';
+                
+            }else{
+                elemento.style.display = 'none';
+    }
+};
+    </script>
     <title>Home Page</title>
 </head>
 <body>
@@ -17,8 +28,17 @@
     <header>
         <div class="container header">
             <h1>logoMarca</h1>
-            <div class="btn-mobile is-enabled"><i class="fas fa-bars"></i></div>
+            <div class="btn-mobile is-enabled" onclick="drop()"><i class="fas fa-bars"></i></div>
             <nav class="menu is-disabled">
+                <ul>
+                    <li><a href="#1">sobre</a></li>
+                    <li><a href="#2">serviços</a></li>
+                    <li><a href="#3">habilidades</a></li>
+                    <li><a href="#4">Contato</a></li>
+                </ul>
+            </nav>
+
+            <nav class="menu-mobile is-none" id="dropmenu">
                 <ul>
                     <li><a href="#1">sobre</a></li>
                     <li><a href="#2">serviços</a></li>
