@@ -152,25 +152,25 @@
             justify-content: center;
         }
 
-        .menu-mobile > ul {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            text-align: center;
-        }
+            .menu-mobile > ul {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
 
-        .menu-mobile > ul li {
-            width: 100%;
-            border-bottom: 1px solid rgba(77, 77, 77, 0.781);
-            background-color: rgba(24, 23, 23, 0.493);
-            padding: 8px 0;
-        }
+                .menu-mobile > ul li {
+                    width: 100%;
+                    border-bottom: 1px solid rgba(77, 77, 77, 0.781);
+                    background-color: rgba(24, 23, 23, 0.493);
+                    padding: 8px 0;
+                }
 
-        .menu-mobile > ul li a {
-            color: #fff;
-            font-weight: bold;
-            font-size: 16px;
-        }
+                    .menu-mobile > ul li a {
+                        color: #fff;
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
 
     .banner {
         height: 100%;
